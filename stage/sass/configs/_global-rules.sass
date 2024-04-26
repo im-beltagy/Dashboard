@@ -1,0 +1,72 @@
+/*  ===================
+    Sections Navigation
+    ===================
+    1. scrollbar
+    2. container
+    3. Just Beltagy Pic
+    4. Input Fields
+    5. Box Title
+    */
+// Font
+body 
+  font-family: "Lexend Deca", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+  color: $black
+
+// Img Container
+.img-container
+  img
+    width: 100%
+
+// 1. scrollbar
+::-webkit-scrollbar 
+  background-color: #0000
+::-webkit-scrollbar-thumb 
+  background-color: $blue
+::-webkit-scrollbar-track 
+  background-color: #0000
+
+// 2. container
+.container
+  padding: .3rem
+  @include md-screen
+    padding: $main-padding
+      
+// 3. Just Beltagy Pic
+.just-beltagy-pic
+  display: inline-block
+  vertical-align: middle
+  width: 1.5em
+  background-color: $black
+  border-radius: 100%
+  padding: .25em
+
+// 4. Input Fields
+input[type="search"], input[type="text"], textarea 
+  all: unset
+  box-sizing: border-box
+  padding: .7em
+  border: 1px solid #ccc
+  border-radius: .5em
+  font-size: .8rem
+  &:focus
+    outline: none
+    border-color: $black
+  &:disabled
+    background-color: #f0f4f8
+    color: #bbb
+  &::placeholder
+    color: $gray
+
+// 5. Box Title
+.title
+  margin-bottom: $main-padding
+  h2, h3, h4
+    margin: .2em 0
+    color: $black
+  h3
+    font-weight: 400
+  p, span
+    display: block
+    margin: 0 .2em .2em
+    color: $gray
+    font-size: .9em
